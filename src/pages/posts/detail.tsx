@@ -194,7 +194,7 @@ const DetailPosts = () => {
                             <div className="space-y-1 flex-auto">
                               <h1 className="flex flex-col lg:flex-row font-semibold leading-none">
                                 {data.user.name}
-                                <span className="mt-1 ml-0 md:mt-0  md:ml-2 font-light text-sm">
+                                <span className="mt-1 ml-0 md:mt-0 md:ml-2 font-light text-sm">
                                   {format(
                                     new Date(data.created_at),
                                     "dd MMM Y - p"

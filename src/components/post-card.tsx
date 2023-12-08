@@ -47,7 +47,7 @@ const PostCard = (props: Props) => {
 
   return (
     <div className=" w-full md:w-3/4 lg:w-1/2 h-fit">
-      <div className="flex bg-white dark:bg-indigo-950/20 border p-6 gap-4 rounded-lg justify-center shadow">
+      <div className="flex bg-white dark:bg-indigo-950/20 border p-4 md:p-6 gap-2 md:gap-4 rounded-lg justify-center shadow">
         <div className="flex-none">
           <img
             src={data.user.image}
