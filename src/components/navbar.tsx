@@ -68,10 +68,12 @@ const Navbar = () => {
             />
           </div>
         </form>
-        <div className="flex items-center md:gap-0 lg:gap-3 border rounded-full py-0 md:py-1 px-1 lg:px-2 shadow shadow-border bg-gradient-to-r from-indigo-600 to-indigo-400 text-white">
+        <div className="flex items-center md:gap-0 lg:gap-3 border rounded-full py-1 lg:py-2 px-1 lg:px-2 shadow shadow-border bg-gradient-to-r from-indigo-600 to-indigo-400 text-white">
           <Avatar className="w-[28px] h-[28px] md:w-[30px] md:h-[30px] lg:w-[45px] lg:h-[45px]">
             <AvatarImage src={user.image} />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarFallback className="text-black dark:text-white">
+              CN
+            </AvatarFallback>
           </Avatar>
           <div className="hidden md:hidden lg:block">
             <h1 className="font-medium leading-none mb-1 truncate">
