@@ -138,19 +138,19 @@ const DetailPosts = () => {
           </div>
         ) : (
           <>
-            <div className="w-full lg:w-[60%] h-fit flex flex-col lg:flex-row p-5 gap-3 rounded-md justify-center">
+            <div className="w-full lg:w-[60%] h-fit flex flex-col lg:flex-row p-0 md:p-4 gap-3 rounded-md justify-center">
               <Button
                 className="w-fit py-0 px-1 h-fit mr-4 rounded-md shadow border"
                 onClick={() => navigate("/")}
               >
                 <ChevronLeft size={40} />
               </Button>
-              <div className="w-full flex gap-3">
+              <div className="w-full flex gap-2 md:gap-3">
                 <div className="flex-none">
                   <img
                     src={detailPosts?.user.image}
                     alt={detailPosts?.user.name}
-                    className="rounded-full w-12"
+                    className="rounded-full w-10 h-10 md:w-10 md:h-10 object-cover"
                   />
                 </div>
                 <div className="flex flex-col gap-4 grow">
@@ -188,13 +188,13 @@ const DetailPosts = () => {
                               <img
                                 src={data.user.image}
                                 alt="johndoe"
-                                className="rounded-full w-10"
+                                className="rounded-full w-10 h-10 md:w-10 md:h-10 object-cover"
                               />
                             </div>
                             <div className="space-y-1 flex-auto">
-                              <h1 className="font-semibold leading-none">
+                              <h1 className="flex flex-col lg:flex-row font-semibold leading-none">
                                 {data.user.name}
-                                <span className="ml-2 font-light text-sm">
+                                <span className="mt-1 ml-0 md:mt-0  md:ml-2 font-light text-sm">
                                   {format(
                                     new Date(data.created_at),
                                     "dd MMM Y - p"

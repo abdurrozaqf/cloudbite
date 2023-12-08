@@ -51,7 +51,7 @@ const PostCardHistory = (props: Props) => {
           <img
             src={user.image}
             alt={user.name}
-            className="rounded-full w-12 h-12"
+            className="rounded-full w-10 h-10 md:w-12 md:h-12 object-cover"
           />
         </div>
         <div className="flex flex-col gap-4 grow">
